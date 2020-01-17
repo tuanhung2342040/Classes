@@ -1,0 +1,40 @@
+public class Student {
+        private String firstname;
+        private int id;
+        static int studentnum;
+        Student(String firstname, int id){
+            this.firstname=firstname;
+            this.id=id;
+            studentnum++;
+        }
+
+        public String getFirstname() {
+            return firstname;
+        }
+
+        public void setFirstname(String firstname) {
+            this.firstname = firstname;
+        }
+        public int getIdNum() {
+            return id;
+        }
+
+        public void setIdNum(int id) {
+            this.id = id;
+        }
+        public String toString() {
+            return "student id:" + id + "\t" + "student name:" + firstname;
+        }
+        public static Courses[] add(Courses[] course, Courses num3){
+            Courses[] temp = new Courses[course.length+1];
+            for(int i=0; i<course.length; i++){
+                temp[i] = course[i];
+            }
+
+            temp[course.length] = num3;
+            return temp;
+
+        }
+    }
+
+
