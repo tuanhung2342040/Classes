@@ -7,7 +7,7 @@ public class Main {
         System.out.println(firstStudent);
         Courses first = new Courses("pe", 67);
         System.out.println(first);
-//calling the three methods
+
         Courses num0 = new Courses("french", 67);
         Courses num1 = new Courses("science", 34);
         Courses num2 = new Courses("socials", 56);
@@ -16,8 +16,8 @@ public class Main {
         course[0] = num0;
         course[1] = num1;
         course[2] = num2;
-//calling the method to add a course to the students array
         course = Student.add(course,num3);
+         
         System.out.println("start? y/n");
         String user = scan.nextLine();
         if(user.equals("y")){
